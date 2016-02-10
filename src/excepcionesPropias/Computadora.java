@@ -37,8 +37,9 @@ public class Computadora {
 		for (int i = 0; i < 12; i++) {
 			if(i>0 && i%2 == 0){
 				mac+=":";
-				mac += this.mac.charAt(i);
+				
 			}
+			mac += this.mac.charAt(i);
 		}
 		return mac;
 	}
