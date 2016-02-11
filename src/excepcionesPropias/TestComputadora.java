@@ -19,11 +19,9 @@ public class TestComputadora {
 				Computadora c = new Computadora(nombre, hd, ram, mac);
 				lista.add(c);
 			} catch (NoMACCorrectaException e) {
-				System.out.println("Direccion MAC erronea");
-				
+				System.out.println("Direccion MAC erronea");	
 			}
 		}
-
+		System.out.println(lista);
 	}
-
 }
