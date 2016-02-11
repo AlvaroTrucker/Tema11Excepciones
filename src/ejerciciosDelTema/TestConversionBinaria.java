@@ -1,6 +1,6 @@
 package ejerciciosDelTema;
 
-public class TestConversionDecimal {
+public class TestConversionBinaria {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
