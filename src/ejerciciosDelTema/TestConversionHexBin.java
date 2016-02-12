@@ -1,15 +1,19 @@
 package ejerciciosDelTema;
 
-import java.util.Scanner;
-
 public class TestConversionHexBin {
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		System.out.println("Introduce un numero en decimal");
-		int numeroDecimal =in.nextInt();
-		
-		System.out.println(ConversionHexadecimal.numeroDecimal());
+		try {
+			System.out.println(ConversionHexBin.convertirBinarioADecimal("111"));
+			try {
+				System.out.println(ConversionHexBin.convertirHexadecimalABinario("1"));
+			} catch (NoHexadecimalException e) {
+				System.out.println("No es un numero hexadecimal");
+			}
+			catch (NoBinarioException e) {
+			System.out.println("No es un numero binario");
+		}
 	}
-
+	}
 }
+
